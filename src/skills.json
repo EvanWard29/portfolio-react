@@ -1,0 +1,81 @@
+{
+    "languages": [
+        {
+            "id": "php",
+            "description": "PHP",
+            "percent": 100
+        },
+        {
+            "id": "mysql",
+            "description": "MySQL",
+            "percent": 90
+        },
+        {
+            "id": "html-css",
+            "description": "HTML/CSS",
+            "percent": 70
+        },
+        {
+            "id": "javascript",
+            "description": "JavaScript",
+            "percent": 80
+        },
+        {
+            "id": "java",
+            "description": "Java",
+            "percent": 60
+        },
+        {
+            "id": "c-sharp",
+            "description": "C#",
+            "percent": 40
+        },
+        {
+            "id": "python",
+            "description": "Python",
+            "percent": 30
+        },
+        {
+            "id": "c-c-plus-plus",
+            "description": "C/C++",
+            "percent": 20
+        }
+    ],
+    "qualities": [
+        {
+            "description": "Strong independent worker."
+        },
+        {
+            "description": "Excellent organisation."
+        },
+        {
+            "description": "Good time management."
+        },
+        {
+            "description": "Excellent problem solver."
+        },
+        {
+            "description": "Dedicated team worker."
+        },
+        {
+            "description": "Active listener."
+        },
+        {
+            "description": "Quick learner."
+        }
+    ],
+    "technicals": [
+        {
+            "description": "Excellent understanding of working in Laravel versions 5.4-10x."
+        },
+        {
+            "description": "8+ years of experience in programming."
+        },
+        {
+            "description": "4+ years of experience working with PHP"
+        },
+        {
+            "description": "2:1 Bachelors Degree in Computer Science."
+        }
+    ]
+}
