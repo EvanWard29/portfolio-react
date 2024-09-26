@@ -28,7 +28,7 @@ const Project = ({id, title, description}) => {
                 className={'portfolio-modal modal fade'}
                 show={show}
                 onHide={handleClose}
-                backdrop={"static"}
+                backdrop
                 keyboard={false}
                 size={"xl"}
             >
