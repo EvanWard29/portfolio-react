@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import {Button, Modal} from "react-bootstrap";
 import {useState} from "react";
 
-const Project = ({id, title, description}) => {
+const Project = ({id, title, description, links, year, thumbnail}) => {
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
@@ -19,7 +19,7 @@ const Project = ({id, title, description}) => {
                         <div className="portfolio-item-caption-content text-center text-white"><i
                             className="fas fa-plus fa-3x"></i></div>
                     </div>
-                    <img className="img-fluid img-thumbnail" src={`src/assets/img/portfolio/${id}/thumbnail.webp`}
+                    <img className="img-fluid img-thumbnail" src={thumbnail}
                          alt={title} width="900px" height="650"/>
                 </div>
             </div>
@@ -51,8 +51,7 @@ const Project = ({id, title, description}) => {
                                     <div className="divider-custom-line"></div>
                                 </div>
                                 {/*Portfolio Modal - Image*/}
-                                <img className="img"
-                                     src={`src/assets/img/portfolio/${id}/thumbnail.webp`} alt={title}/>
+                                <img className="img" src={thumbnail} alt={title}/>
                                 {/*Portfolio Modal - Description*/}
                                 <div className="text-start mt-3">
                                     <div dangerouslySetInnerHTML={{ __html: description }} />
@@ -120,7 +119,10 @@ const Project = ({id, title, description}) => {
 Project.propTypes = {
     id: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired
+    description: PropTypes.string.isRequired,
+    links: PropTypes.arrayOf(PropTypes.string).isRequired,
+    year: PropTypes.string.isRequired,
+    thumbnail: PropTypes.string.isRequired
 }
 
 export default Project;

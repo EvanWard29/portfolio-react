@@ -1,4 +1,4 @@
-import projects from "../../projects.json"
+import {projects} from "../../projects.js"
 import Project from "./Project.jsx";
 
 const Projects = () => {
@@ -19,7 +19,16 @@ const Projects = () => {
                 </div>
                 {/*Portfolio Grid Items*/}
                 <div className="row justify-content-center">
-                    {projects.map((project) => <Project key={project.id} id={project.id} title={project.title} description={project.description} />)}
+                    {projects.map((project) => <Project
+                            key={project.id}
+                            id={project.id}
+                            title={project.title}
+                            description={project.description}
+                            thumbnail={project.thumbnail}
+                            links={project.links}
+                            year={project.year}
+                        />
+                    )}
                 </div>
             </div>
         </section>
