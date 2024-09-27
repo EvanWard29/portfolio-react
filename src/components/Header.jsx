@@ -1,25 +1,25 @@
 import profileImg from '../assets/img/profile.webp'
+import {Container, Nav, Navbar, Offcanvas} from "react-bootstrap";
 
 const Header = () => {
     return (
         <>
             {/*Navigation*/}
-            <nav className="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-                <div className="container">
-                    <a className="navbar-brand" href="#page-top">Evan Ward</a>
-                    <button className="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                        Menu
-                        <i className="fas fa-bars"></i>
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarResponsive">
-                        <ul className="navbar-nav ms-auto">
-                            <li className="nav-item mx-0 mx-lg-1"><a className="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
-                            <li className="nav-item mx-0 mx-lg-1"><a className="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
-                            <li className="nav-item mx-0 mx-lg-1"><a className="nav-link py-3 px-0 px-lg-3 rounded" href="#skills">Skills</a> </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+            <Navbar collapseOnSelect expand={"lg"} className={"bg-secondary text-uppercase fixed-top"} id={"mainNav"}>
+                <Container>
+                    <Navbar.Brand href={"#page-top"}>Evan Ward</Navbar.Brand>
+                    <Navbar.Toggle aria-controls={"offCanvasNavbar"} className={""}/>
+                    <Navbar.Offcanvas id={"offCanvasNavbar"} placement={"top"} scroll={true} backdrop={true} className={"h-25"}>
+                        <Offcanvas.Body className={"bg-secondary text-uppercase"}>
+                            <Nav id={"navBody"} className={"justify-content-end flex-grow-1 pe-3"}>
+                                <Nav.Link href={"#portfolio"} className={"py-3 px-0 px-lg-3 rounded"}>Portfolio</Nav.Link>
+                                <Nav.Link href={"#about"} className={"py-3 px-0 px-lg-3 rounded"}>About</Nav.Link>
+                                <Nav.Link href={"#skills"} className={"py-3 px-0 px-lg-3 rounded"}>Skills</Nav.Link>
+                            </Nav>
+                        </Offcanvas.Body>
+                    </Navbar.Offcanvas>
+                </Container>
+            </Navbar>
             {/*Masthead*/}
             <header className="masthead bg-primary text-white text-center">
                 <div className="container d-flex align-items-center flex-column">

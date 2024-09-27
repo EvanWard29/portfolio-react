@@ -10899,6 +10899,7 @@ html {
 }
 #mainNav .navbar-brand {
   color: #fff;
+  font-weight: 700;
 }
 #mainNav .navbar-nav {
   margin-top: 1rem;
@@ -10918,6 +10919,18 @@ html {
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.8rem;
+}
+
+#navBody {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+}
+
+#navBody a.nav-link {
+  color: #fff;
+}
+#navBody a.nav-link:active a.nav-link:hover {
+  color: #1abc9c;
 }
 
 @media (min-width: 992px) {
