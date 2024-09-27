@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import {Button, Modal} from "react-bootstrap";
 import {useState} from "react";
+import Link from "./Link.jsx";
 
 const Project = ({id, title, description, links, year, thumbnail}) => {
     const [show, setShow] = useState(false);
@@ -52,6 +53,8 @@ const Project = ({id, title, description, links, year, thumbnail}) => {
                                 </div>
                                 {/*Portfolio Modal - Image*/}
                                 <img className="img" src={thumbnail} alt={title}/>
+                                {/*Project Links*/}
+                                {links.map((link, key) => <Link key={key} url={link.url} svg={link.svg}/>)}
                                 {/*Portfolio Modal - Description*/}
                                 <div className="text-start mt-3">
                                     <div dangerouslySetInnerHTML={{ __html: description }} />
@@ -120,7 +123,10 @@ Project.propTypes = {
     id: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
-    links: PropTypes.arrayOf(PropTypes.string).isRequired,
+    links: PropTypes.arrayOf(PropTypes.shape({
+        url: PropTypes.string.isRequired,
+        svg: PropTypes.string.isRequired,
+    })).isRequired,
     year: PropTypes.string.isRequired,
     thumbnail: PropTypes.string.isRequired
 }
