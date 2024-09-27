@@ -36,7 +36,6 @@ export const projects =[
         svg: catchappSvg
       }
     ],
-    "year": "2021-2024",
     "thumbnail": catchapp
   },
   {
@@ -49,7 +48,6 @@ export const projects =[
         svg: githubSvg
       }
     ],
-    "year": "2024",
     "thumbnail": mcInteractions
   },
   {
@@ -62,7 +60,6 @@ export const projects =[
         svg: githubSvg
       }
     ],
-    "year": "2020-2021",
     "thumbnail": backToWork
   },
   {
@@ -79,7 +76,6 @@ export const projects =[
         svg: youtubeSvg
       }
     ],
-    "year": "2020-2021",
     "thumbnail": thisIsIt
   },
   {
@@ -92,7 +88,6 @@ export const projects =[
         svg: githubSvg
       }
     ],
-    "year": "2020",
     "thumbnail": sleepDeep
   },
   {
@@ -105,7 +100,6 @@ export const projects =[
         svg: githubSvg
       }
     ],
-    "year": "2019-2020",
     "thumbnail": patientSystem
   },
   {
@@ -122,7 +116,6 @@ export const projects =[
         svg: youtubeSvg
       }
     ],
-    "year": "2020",
     "thumbnail": whiteLion
   },
   {
@@ -135,7 +128,6 @@ export const projects =[
         svg: githubSvg
       }
     ],
-    "year": "2018-2019",
     "thumbnail": weatherApp
   }
 ]

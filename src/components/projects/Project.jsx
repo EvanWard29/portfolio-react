@@ -3,7 +3,7 @@ import {Button, Modal} from "react-bootstrap";
 import {useState} from "react";
 import Link from "./Link.jsx";
 
-const Project = ({id, title, description, links, year, thumbnail}) => {
+const Project = ({id, title, description, links, thumbnail}) => {
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
@@ -127,7 +127,6 @@ Project.propTypes = {
         url: PropTypes.string.isRequired,
         svg: PropTypes.string.isRequired,
     })).isRequired,
-    year: PropTypes.string.isRequired,
     thumbnail: PropTypes.string.isRequired
 }
 

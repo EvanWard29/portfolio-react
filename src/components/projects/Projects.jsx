@@ -26,7 +26,6 @@ const Projects = () => {
                             description={project.description}
                             thumbnail={project.thumbnail}
                             links={project.links}
-                            year={project.year}
                         />
                     )}
                 </div>
