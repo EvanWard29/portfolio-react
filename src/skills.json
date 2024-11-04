@@ -2,7 +2,7 @@
     "languages": [
         {
             "id": "php",
-            "description": "PHP",
+            "description": "PHP/Laravel",
             "percent": 100
         },
         {
@@ -17,8 +17,8 @@
         },
         {
             "id": "javascript",
-            "description": "JavaScript",
-            "percent": 80
+            "description": "JavaScript/React",
+            "percent": 70
         },
         {
             "id": "java",
